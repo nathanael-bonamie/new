@@ -48,8 +48,6 @@ video {
 }
 </style>
 <script>
-var audio = new Audio('./kv-frame.mp3');
-audio.play();
 var date = new Date();
 var end=false;
 var pause=false;
@@ -250,10 +248,13 @@ xmlhttp.send();
 </head>
 <body>
 <div class="container">
-  <video autoplay muted id="myVideo" class="container">	
+ 	<video autoplay muted id="myVideo" class="container">	
 		<source src="https://github.com/nathanael-bonamie/new/raw/main/lastPK6.mp4"
-				type="video/mp4">
+			type="video/mp4">
 	</video>
+	<audio autoplay>
+  		<source src="https://github.com/nathanael-bonamie/new/raw/main/kv-frame.mp3" type="audio/mpeg">
+	</audio>
   <div class="center" id="demo"></div>
 </div>
 
